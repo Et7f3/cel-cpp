@@ -1,0 +1,9 @@
+{
+  "name": "cel",
+  "esy": {
+    "build": [
+      "bazel --output_base=/tmp/bazel build parser"
+    ],
+    "install": "cp /tmp/bazel/execroot/__main__/bazel-out/k8-fastbuild/bin/parser/libparser.a #{self.lib}"
+  }
+}
